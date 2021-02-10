@@ -1,0 +1,198 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class=" supports cssfilters"><head>
+
+    <title>OrangeHRM</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        .material-icons {
+            opacity: 0 !important;
+        }
+        body.material-icons-visible .material-icons {
+            opacity: 1 !important;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="/webres_600e47457f9863.07917731/themes/6x-demo-responsive/images/favicon.ico">
+
+    <!-- Library CSS files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/webres_600e47457f9863.07917731/css/header.min.css">
+
+    
+    <script type="text/javascript">
+        var orangehrm = {
+            baseUrl: '/index.php'
+        };
+        window.onbeforeunload = function(event) {
+            if (window.self === window.top) {
+                if (preloaderOption && (typeof preloaderOption.pageTransition === 'undefined' || preloaderOption.pageTransition) ) {
+                    preloaderOption.On();
+                    $('#preloader').removeClass('inactive').addClass('active');
+                    preloaderOption.pageTransition = true;
+                }
+            }
+        };
+
+        window.onunload = function(event) {
+            if (window.self === window.top) {
+                if (preloaderOption) {
+                    preloaderOption.Off();
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript" src="/webres_600e47457f9863.07917731/js/material_header.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/webres_600e47457f9863.07917731/js/orangehrm.librarycustomizations.js"></script>
+<script type="text/javascript" src="/webres_600e47457f9863.07917731/js/jquery/validate/messages/messages_en.js"></script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/webres_600e47457f9863.07917731/js/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/client/build/styles-6x-demo-responsive/noncore.css?ts=1611548477">    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <script type="text/javascript">
+    var navigationLogConfig = {
+        enabled: false,
+        url: '/navigation/navigationLogNoncore'
+    }
+</script>
+<script type="text/javascript" src="/webres_600e47457f9863.07917731/orangehrmSecurityAuthenticationPlugin/js/securityAuthenticationCommon.js"></script>
+<script type="text/javascript" src="/webres_600e47457f9863.07917731/orangehrmNavigationTrackerPlugin/js/noncoreNavigationLogger.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/webres_600e47457f9863.07917731/orangehrmSecurityAuthenticationPlugin/css/securityAuthenticationCommon.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/webres_600e47457f9863.07917731/orangehrmSecurityAuthenticationPlugin/css/retryLoginSuccess.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/webres_600e47457f9863.07917731/themes/6x-demo-responsive//css/sec_auth.css">
+</head>
+<body>
+
+
+
+<div id="divContent">
+    <div id="divLogo">
+    <img src="/webres_600e47457f9863.07917731/themes/6x-demo-responsive/images/login/logo.png">
+</div>    <div class="box login-container">
+        <div class="orangehrm-form">
+            <div class="dashboardCard-title-for-card">Retry Login</div>
+                    
+    
+<script type="text/javascript">
+    $(".messageCloseButton").click(function () {
+        $("div.fadable").remove();
+    });
+
+        //<![CDATA[
+    $("div.fadable").delay(3000)
+        .fadeOut("slow", function () {
+            $("div.fadable").remove();
+        });
+    //<![CDATA[
+    </script>
+            <div class="card-content orangehrm-form-body">
+                <form id="frmRetryLogin" method="post" action="/auth/validateCredentials" novalidate="novalidate">
+                    <input type="hidden" name="login[_csrf_token]" value="a6519681f6e6c205ea10a08dede80153" id="login__csrf_token">                    <input type="hidden" name="hdnUserTimeZoneOffset" id="hdnUserTimeZoneOffset" value="-5">
+                    <fieldset>
+                        <div class="row" id="loginInputSection">
+                            <div class="input-field col s12">
+                                <label for="txtUsername">Username <em>*</em></label>                                <input name="txtUsername" id="txtUsername" type="text">                            </div>
+                            <div class="input-field col s12">
+                                <label for="txtPassword">Password <em>*</em></label>                                <input name="txtPassword" id="txtPassword" autocomplete="off" type="password">                            </div>
+                            <div class="col s12 spacing">
+                                
+<script>
+    var  hasCAPTCHA = "";
+    var  captchaInputFieldName = "txtCAPTCHATextInput";
+</script>
+                            </div>
+                            <div class="col s12 spacing" id="forgotPasswordLink">
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col s12 required line" id="requiredMsg" aria-required="true">
+                                    <em>*</em> Required field                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="loginInfo">
+                            <strong>Instructions</strong>
+                            <ul class="col s12">
+                                <li>
+                                    Enter your username and password, and solve the problem (if provided) to retry login.                                </li>
+                                                                                                    <li>
+                                        If you exceed the allowed number of login attempts, logins will be blocked for a certain period of time.</li>
+                                                            </ul>
+                        </div>
+                        <div class="row">
+                            <button name="Submit" class="waves-effect waves-light btn action-btn right submitbutton" id="btnLogin">Login</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div id="footer"><div>OrangeHRM 7.0<br>
+        © 2005 - 2021 <a href="http://www.orangehrm.com" target="_blank">OrangeHRM, Inc</a>. All rights reserved.
+</div>
+        <ul id="social-icons" class="">
+            <li><a class="linkedIn" href="http://www.linkedin.com/groups?home=&amp;gid=891077" target="_blank"></a></li>
+            <li><a class="facebook" href="http://www.facebook.com/OrangeHRM" target="_blank"></a></li>
+            <li><a class="twitter" href="http://twitter.com/orangehrm" target="_blank"></a></li>
+            <li><a class="youtube" href="http://www.youtube.com/orangehrm" target="_blank"></a></li>
+        </ul>
+    </div>
+
+<script type="text/javascript">
+
+    function validateLogin() {
+    }
+
+    function calculateUserTimeZoneOffset() {
+        var myDate = new Date();
+        var offset = (-1) * myDate.getTimezoneOffset() / 60;
+        return offset;
+    }
+
+    $(document).ready(function () {
+        $('#hdnUserTimeZoneOffset').val(calculateUserTimeZoneOffset().toString());
+        $('#btnLogin').click(function (event) {
+            event.preventDefault();
+            var txtPasswordExist = true;
+            if ($("#txtPassword").length) {
+                var txtPasswordExist = true;
+            } else {
+                var txtPasswordExist = false;
+            }
+            if (txtPasswordExist) {
+                $("#frmRetryLogin").submit();
+            }
+
+        });
+        var validator = $("#frmRetryLogin").validate({
+            rules: {
+                'txtUsername': {
+                    required: true
+                },
+                'txtPassword': {
+                    required: true
+                }
+            },
+            messages: {
+                'txtUsername': {
+                    required: 'Required'
+                },
+                'txtPassword': {
+                    required: 'Password cannot be empty'
+                }
+            }
+        });
+    });
+
+</script>
+
+
+
+
+<div class="hiddendiv common"></div><div id="toast-container" class="toast-top-right" aria-live="polite" role="alert"><div class="toast toast-error" style="display: block;"><button type="button" class="toast-close-button" role="button">×</button><div class="toast-message">
+            Invalid Credentials            
+        </div></div></div></body></html>

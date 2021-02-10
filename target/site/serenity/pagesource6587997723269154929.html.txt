@@ -1,0 +1,466 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+        <title>OrangeHRM</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="shortcut icon" href="/webres_600e47457f9863.07917731/themes/6x-demo-responsive/images/favicon.ico">
+
+                <script type="text/javascript" src="/webres_600e47457f9863.07917731/js/jquery/jquery-1.11.1.min.js"></script>
+<link rel="prefetch" href="/client/client/build/styles-6x-demo-responsive/app.css?ts=1611548477">
+<link rel="prefetch" href="/client/build/styles/lib-bba1559de5.css">
+<link rel="prefetch" href="/client/client/build/styles-6x-demo-responsive/noncore.css?ts=1611548477">
+<link rel="prefetch" href="/client/client/build/styles-6x-demo-responsive/nonmaterial.css?ts=1611548477">
+<link rel="prefetch" href="/client/build/js/app-b4b876281c.js">
+<link rel="prefetch" href="/client/build/js/lib-aa273838c8.js">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content" style="padding-top:0"><link href="/webres_600e47457f9863.07917731/themes/6x-demo-responsive/images/login/../../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/webres_600e47457f9863.07917731/themes/6x-demo-responsive/images/login/../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/webres_600e47457f9863.07917731/themes/6x-demo-responsive/images/login/../../js/accordion.js"></script>
+<link rel="stylesheet prefetch" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style type="text/css">
+    body {
+        background-color: #eaeaea;
+    }
+
+    .social-buttons {
+        height: 50px;
+        margin-top: 20px;
+        font-size: 0;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .social-button {
+        display: inline-block;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 5px 5px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        opacity: .99;
+        border-radius: 25%;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+        -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+        transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    }
+    .social-button:before {
+        content: '';
+
+        width: 120%;
+        height: 120%;
+        position: absolute;
+        top: 90%;
+        left: -110%;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+        transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    }
+    .social-button .fa {
+        font-size: 38px;
+        vertical-align: middle;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+        transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    }
+    .social-button.facebook:before {
+        background-color: #3B5998;
+    }
+    .social-button.facebook .fa {
+        color: #3B5998;
+    }
+    .social-button.twitter:before {
+        background-color: #3CF;
+    }
+    .social-button.twitter .fa {
+        color: #3CF;
+    }
+    .social-button.google:before {
+        background-color: #DC4A38;
+    }
+    .social-button.google .fa {
+        color: #DC4A38;
+    }
+    .social-button.linkedin:before {
+        background-color: #539dea;
+    }
+    .social-button.linkedin .fa {
+        color: #539dea;
+    }
+    .social-button.youtube:before {
+        background-color: #e8275e;
+    }
+    .social-button.youtube .fa {
+        color: #e8275e;
+    }
+    .social-button.dribbble:before {
+        background-color: #F26798;
+    }
+    .social-button.dribbble .fa {
+        color: #F26798;
+    }
+    .social-button.skype:before {
+        background-color: #00AFF0;
+    }
+    .social-button.skype .fa {
+        color: #00AFF0;
+    }
+    .social-button:focus:before, .social-button:hover:before {
+        top: -10%;
+        left: -10%;
+    }
+    .social-button:focus .fa, .social-button:hover .fa {
+        color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .outer{
+        width:100%;
+        border:10px;
+
+        /* Firefox */
+        display:-moz-box;
+        -moz-box-pack:center;
+        -moz-box-align:center;
+
+        /* Safari and Chrome */
+        display:-webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+
+        /* W3C */
+        display:box;
+        box-pack:center;
+        box-align:center;
+    }
+
+    .divCopyright {
+        display: block;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        color: rgba(51,51,51,1);
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+    }
+
+    #divLoginButton {
+        margin-top: 14px;
+        float: left;
+        width: 100%;
+    }
+    
+    #loginAsButtonGroup {
+        width: 100%;
+    }
+    
+    #loginAsButtonGroup button {
+        width: 100%;
+    }
+    
+    #loginAsButtonGroup button span {
+        margin-left: 2%;
+    }
+    
+    #loginAsButtonGroup .dropdown-menu {
+        width: 100%;
+    }
+
+    #loginFormContainer {
+        background: #f68422; 
+        color: #ffffff;
+        min-height: 360px;
+    }
+
+    #largeScreenPaddingDiv {
+        margin-top:140px;
+    }
+
+    #paneContainer {
+        background: #ffffff;
+    }
+
+    #spanMessage {
+        text-align: center;
+        display: block;
+        margin: 1% auto 1% auto;
+    }
+
+    .btn-success {
+        background: #47a447;
+        border-color: #47a447;
+        min-width:100%;
+        margin-bottom:2%;
+    }
+
+    .btn-lg {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .marginBottom10 { 
+        margin-bottom:10px;
+    }
+    .paddingTop20 { 
+        padding-top:20px;
+
+    }
+
+</style>
+
+<div class=" hidden-sm hidden-xs" id="largeScreenPaddingDiv"> </div>
+<div class="outer">
+    <div class="container col-md-7 col-sm-8 col-lg-7" id="paneContainer">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="col-md-12 outer">
+                    <div class="col-md-7 col-sm-8 col-xs-8  marginBottom10"> <img src="/webres_600e47457f9863.07917731/themes/6x-demo-responsive/images/login/HRforall_final_logo.png" class="img-responsive"> </div>
+                </div>
+                <div class="col-md-12 marginBottom10 outer"> <img src="/webres_600e47457f9863.07917731/themes/6x-demo-responsive/images/login/logo_ent.png" class="img-responsive">  </div>
+
+
+                <div class="outer hidden-xs">
+                    <!-- social media -->
+                    <div class="col-md-12 hidden-sm  pull-left social-buttons outer ">
+                        <a href="//www.facebook.com/OrangeHRM" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="//twitter.com/orangehrm" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="//plus.google.com/+OrangeHRM/" class="social-button google"><i class="fa fa-google"></i></a>
+                        <a href="//www.linkedin.com/company/orangehrm" class="social-button linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="//www.youtube.com/user/orangehrm" class="social-button youtube"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <!-- social media -->
+                    <div class="divCopyright outer">
+                        OrangeHRM 7.0<br>
+        © 2005 - 2021 <a href="http://www.orangehrm.com" target="_blank">OrangeHRM, Inc</a>. All rights reserved.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-7 " id="loginFormContainer">
+
+                <div class="col-md-12 paddingTop20" id="midPaneContentWrapper">
+                    <h1><b>Login</b></h1>
+                    <h3>OrangeHRM Demo</h3>
+                    <div class="divForm">
+                        <form id="frmLogin" method="post" action="/auth/validateCredentials">
+                            <input type="hidden" name="login[_csrf_token]" value="ccd360538742e5fae6a4cb1912d200a7" id="login__csrf_token">                            <input type="hidden" name="actionID">
+                            <input type="hidden" name="hdnUserTimeZoneOffset" id="hdnUserTimeZoneOffset" value="-5">
+
+                            <div id="divUsername" class="textInputContainer marginBottom10 ">
+                                <input name="txtUsername" id="txtUsername" type="text" value="admin" placeholder="Username" class="form-control">                            </div>
+                            <div id="divPassword" class="textInputContainer marginBottom10">
+                                <input name="txtPassword" id="txtPassword" autocomplete="off" type="password" value="admin123" placeholder="Password" class="form-control">                            </div>
+                                                        <div id="divLoginButton">
+                                <input type="submit" name="Submit" class="btn btn-success" id="btnLogin" value="LOGIN">
+                                <div class="btn-group dropup" id="loginAsButtonGroup">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Login as a Different Role<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="login-as" data-username="_ohrmSysAdmin_" data-password="sysadmin">System Administrator</a></li>
+                                        <li><a href="#" class="login-as" data-username="admin" data-password="admin123">Administrator</a></li>
+                                        <li><a href="#" class="login-as" data-username="linda" data-password="linda.anderson">ESS User</a></li>
+                                        <li><a href="#" class="login-as" data-username="kevin" data-password="kevin.mathews">1st Level Supervisor</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outer hidden-md hidden-lg  ">
+                <!-- social media -->
+                <div class="col-md-12   pull-left social-buttons outer">
+                    <a href="//www.facebook.com/OrangeHRM" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="//twitter.com/orangehrm" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="//plus.google.com/+OrangeHRM/" class="social-button google"><i class="fa fa-google"></i></a>
+                    <a href="//www.linkedin.com/company/orangehrm" class="social-button linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="//www.youtube.com/user/orangehrm" class="social-button youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+                <!-- social media -->
+                <div class="divCopyright outer">
+                    OrangeHRM 7.0<br>
+        © 2005 - 2021 <a href="http://www.orangehrm.com" target="_blank">OrangeHRM, Inc</a>. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('a.login-as').on('click', function () {
+        $('#txtUsername').val($(this).data('username'));
+        $('#txtPassword').val($(this).data('password'));
+        $('#frmLogin').submit();
+    });
+</script>
+
+<script type="text/javascript">
+    var csrfUrl = '/auth/regenerateLoginCsrfToken';
+    localStorage.clear();
+
+    function calculateUserTimeZoneOffset() {
+        var myDate = new Date();
+        var offset = (-1) * myDate.getTimezoneOffset() / 60;
+        return offset;
+    }
+            
+    function addHint(inputObject, hintImageURL) {
+        if (inputObject.val() == '') {
+            inputObject.css('background', "url('" + hintImageURL + "') no-repeat 10px 3px");
+        }
+    }
+            
+    function removeHint() {
+       $('.form-hint').css('display', 'none');
+    }
+    
+    function showMessage(message) {
+        if ($('#spanMessage').size() == 0) {
+            $('<span id="spanMessage"></span>').insertAfter('#btnLogin');
+        }
+
+        $('#spanMessage').html(message);
+    }
+    
+    function validateLogin() {
+        var isEmptyPasswordAllowed = false;
+        
+        if ($('#txtUsername').val() == '') {
+            showMessage('Username cannot be empty');
+            return false;
+        }
+        if ($( "#txtPassword" ).length) {
+            var txtPasswordExist = true;
+        } else {
+            var txtPasswordExist = false;
+        }
+    
+        if (!isEmptyPasswordAllowed) {
+            if ($('#txtPassword').val() == '' || !txtPasswordExist) {
+                showMessage('Password cannot be empty');
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function submitLoginForm(event, csrfTokenUpdated) {
+
+        var formValid = validateLogin();
+        if (formValid) {
+
+            // Continue submit if CSRF token is updated
+            if (csrfTokenUpdated) {
+                return true;
+            }
+
+            // If csrf is invalid, make AJAX call to fetch csrf token and abort this submit by returning false
+            if (!getCsrfToken()) {
+                $.post(csrfUrl, function(token) {
+                    $('#login__csrf_token').val(token);
+
+                    $('#frmLogin').trigger('submit', [true]);
+                });
+                return false;
+            }
+
+            removeCSRFToken();
+            return true;
+        }
+        return false;
+    }
+
+    function getCsrfToken() {
+        var csrfToken = localStorage.getItem('login_csrf');
+
+        try {
+            var now = new Date();
+            var csrfTokenObj = JSON.parse(csrfToken);
+
+            if (csrfTokenObj && csrfTokenObj.expire && csrfTokenObj.expire > now.getTime()) {
+                $('#login__csrf_token').val(csrfTokenObj.token);
+                return true;
+            }
+
+        } catch (e) {
+            removeCSRFToken();
+        }
+
+        return false;
+    }
+
+    function removeCSRFToken() {
+        localStorage.removeItem('login_csrf');
+    }
+
+    function saveCSRFToken(token) {
+        var now = new Date();
+        var expireInMS = now.getTime() + 2 * 60 * 1000;
+
+        localStorage.setItem('login_csrf', JSON.stringify({token: token, expire: expireInMS}));
+    }
+    
+    $(document).ready(function() {
+
+        /* Fading out main messages */
+        jQuery(document).on({
+            click: function() {
+                jQuery(this).parent('div.message').fadeOut("slow");
+            }
+        }, '.message a.messageCloseButton');
+
+        /* Set cookie with csrf token to expire in 2 minutes */
+        saveCSRFToken($('#login__csrf_token').val());
+
+        /*Set a delay to compatible with chrome browser*/
+        setTimeout(checkSavedUsernames,100);
+        
+        $('#txtUsername').focus(function() {
+            removeHint();
+        });
+
+        $('#txtPassword').focus(function() {
+             removeHint();
+        });
+        
+        $('.form-hint').click(function(){
+            removeHint();
+            $('#txtUsername').focus();
+        });
+        
+        $('#hdnUserTimeZoneOffset').val(calculateUserTimeZoneOffset().toString());
+        
+        $('#frmLogin').submit(submitLoginForm);
+    });
+
+    function checkSavedUsernames(){
+        if ($('#txtUsername').val() != '') {
+            removeHint();
+        }
+    }
+
+    if (window.top.location.href != location.href) {
+        window.top.location.href = location.href;
+    }
+
+</script>
+</div>
+    </div>
+
+</body></html>

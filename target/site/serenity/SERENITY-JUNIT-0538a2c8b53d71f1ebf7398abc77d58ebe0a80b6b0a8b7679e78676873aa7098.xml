@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Yo como usuario de Orange HRM" skipped="0" tests="2" time="40.61" timestamp="2021-02-10 02:44:14"><testcase name="Iniciar sesion en la pagina de Orange con usuario registardo"/><testcase name="Iniciar sesion en la pagina de Orange con usuario no registardo"/></testsuite>

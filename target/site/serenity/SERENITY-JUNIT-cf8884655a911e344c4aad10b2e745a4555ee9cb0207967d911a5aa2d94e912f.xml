@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Yo como usuario de Orange HRM" skipped="0" tests="1" time="53.02" timestamp="2021-02-10 12:43:05"><testcase name="Realizar el registro de un usuario en Orange HRM"><failure message="&#10;Expected: equalToIgnoringCase(&quot;Random77696&quot;)&#10;     but: was Wbuelvas77696" type="java.lang.AssertionError">
+Expected: equalToIgnoringCase("Random77696")
+     but: was Wbuelvas77696</failure><system-err>
+Expected: equalToIgnoringCase("Random77696")
+     but: was Wbuelvas77696&#13;
+stepdefinition.OrangeGestionUsuarios.validarUsuarioCreado(OrangeGestionUsuarios.java:36)&#13;
+✽.observa el usuario 'Random' en la tabla(file:///F:/ProyectoSura/Prueba_Orange_tcs/RetoTCSOrange/src/test/resources/feature/gestion_usuario.feature:20)&#13;
+</system-err></testcase></testsuite>

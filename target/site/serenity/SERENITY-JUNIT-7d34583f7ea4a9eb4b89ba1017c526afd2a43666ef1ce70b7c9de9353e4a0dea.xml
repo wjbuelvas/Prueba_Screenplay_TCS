@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Yo como usuario de Orange HRM" skipped="0" tests="1" time="57.96" timestamp="2021-02-10 02:39:14"><testcase name="Agregar Rol a usuario registardo en Orange HRM"><error message="element click intercepted: Element &lt;i class=&quot;material-icons&quot;&gt;...&lt;/i&gt; is not clickable at point (1412, 27). Other element would receive the click: &lt;div class=&quot;lean-overlay&quot; id=&quot;materialize-lean-overlay-1&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=88.0.4324.150)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-NT1NDJP', ip: '10.99.12.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\GS-0014\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 17dab44f4228e9471b8ccb3932399508" type="org.openqa.selenium.ElementClickInterceptedException">element click intercepted: Element &lt;i class="material-icons"&gt;...&lt;/i&gt; is not clickable at point (1412, 27). Other element would receive the click: &lt;div class="lean-overlay" id="materialize-lean-overlay-1" style="z-index: 1002; display: block; opacity: 0.5;"&gt;&lt;/div&gt;
+  (Session info: chrome=88.0.4324.150)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NT1NDJP', ip: '10.99.12.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\GS-0014\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 17dab44f4228e9471b8ccb3932399508</error><system-err>element click intercepted: Element &lt;i class="material-icons"&gt;...&lt;/i&gt; is not clickable at point (1412, 27). Other element would receive the click: &lt;div class="lean-overlay" id="materialize-lean-overlay-1" style="z-index: 1002; display: block; opacity: 0.5;"&gt;&lt;/div&gt;
+  (Session info: chrome=88.0.4324.150)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NT1NDJP', ip: '10.99.12.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\GS-0014\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 17dab44f4228e9471b8ccb3932399508&#13;
+tasks.Filtrar.performAs(Filtrar.java:26)&#13;
+stepdefinition.OrangeGestionUsuarios.filtrarUsuario(OrangeGestionUsuarios.java:24)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:27)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:49)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:51)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:66)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)&#13;
+</system-err></testcase></testsuite>
